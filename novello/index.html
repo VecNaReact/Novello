@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="robots" content="">
+  <link rel="short icon" href="">
+  <link rel="stylesheet" href="libs/swiper.min.css">
+  <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>novello</title>
+</head>
+<body>
+   
+  <div class="wrapper">
+ <!-- ?Подключение Header -->
+ <header class="header fix-block">
+    <div class="container">
+        <div class="header__row">
+            <div class="header__burger burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__logo logo">
+                <a href="index.html">Novello</a>
+            </div>
+            <form class="header__search">
+                <input class="header__search-input" type="text" placeholder="Напишите что ищете...">
+                <button class="header__search-btn"><span class="icon-search"></span></button>
+            </form>
+            <div class="menu__catalog fix-block"> 
+                <div class="obloshka">
+                <div class="menu__catalog-wrapper catalog">
+                    <div class="catalog__wrapper-header">
+                        <div class="catalog__search-mobile">
+                            <form class="header__search">
+                                <input class="header__search-input" type="text" placeholder="Напишите что ищете...">
+                                <button class="header__search-btn"><span class="icon-search"></span></button>
+                            </form>
+                        </div>
+                        <nav class="catalog__list">
+                            <div class="catalog-item js-menu-item">
+                                <a class="catalog__menu-list-link" href="catalog.html">Растение</a>
+                                <button class="js-arrow-down-collupse"><span class="icon-long-down-arrow"></span></button>
+                                <div class="catalog__menu-show submenu">
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item">
+                                                <a href="goods.html" class="submenu__link">Экземплярные</a>
+                                                <div class="submenu__show-content">
+                                                    <div class="submenu__show-body">
+                                                        <div class="submenu__image">
+                                                            <img src="img/header/submenu/submenu-image.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Крупномерные</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Средние деревья</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Кустарники и цветы</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Вечнозеленые</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Луковицы</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Высокие кусты</a></li>
+                                        </ul>
+                                </div>							
+                            </div>
+                            <div class="catalog-item js-menu-item">
+                                <a class="catalog__menu-list-link" href="service.html">Сервис</a>
+                                <button class="js-arrow-down-collupse"><span class="icon-long-down-arrow"></span></button>
+                                <div class="catalog__menu-show submenu">
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a href="card-product-service.html" class="submenu__link">Проектирование сада</a>
+                                            <div class="submenu__show-content">
+                                                <div class="submenu__show-body">
+                                                    <div class="submenu__image">
+                                                        <img src="img/header/submenu/submenu-image-2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="submenu__item"><a href="card-product-service.html" class="submenu__link">Архитектура сада</a></li>
+                                        <li class="submenu__item"><a href="card-product-service.html" class="submenu__link">Обслуживания</a></li>
+                                        <li class="submenu__item"><a href="card-product-service.html" class="submenu__link">Умный сад</a></li>
+                                        <li class="submenu__item"><a href="card-product-service.html" class="submenu__link">Автополив</a></li>
+                                    </ul>
+                                </div>							
+                            </div>
+                            <div class="catalog-item js-menu-item">
+                                <a class="catalog__menu-list-link" href="exclusive.html">Эксклюзивное</a>
+                                <button class="js-arrow-down-collupse"><span class="icon-long-down-arrow"></span></button>
+                                <div class="catalog__menu-show submenu">
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a href="card-product-service.html" class="submenu__link">RING</a>
+                                        </li>
+                                        <li class="submenu__item"><a href="card-product-service.html" class="submenu__link">Кулисы новелло</a></li>
+                                        <li class="submenu__item"><a href="card-product-service.html" class="submenu__link">Умный сад новелл</a></li>
+                                    </ul>
+                                </div>							
+                            </div>
+                            <div class="catalog-item js-menu-item">
+                                <a class="catalog__menu-list-link" href="catalog.html">Удобрения</a>	
+                            </div>
+                            <div class="catalog-item js-menu-item">
+                                <a class="catalog__menu-list-link" href="catalog.html">Оборудование</a>
+                                <button class="js-arrow-down-collupse"><span class="icon-long-down-arrow"></span></button>
+                                <div class="catalog__menu-show submenu">
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item"><a href="goods.html" class="submenu__link">Газонакасилки</a></li>
+                                        <li class="submenu__item"><a href="goods.html" class="submenu__link">Бензопила</a></li>
+                                        <li class="submenu__item"><a href="goods.html" class="submenu__link">Бочки для удобрения</a></li>
+                                    </ul>
+                                </div>							
+                            </div>
+                            <div class="catalog-item js-menu-item">
+                                <a class="catalog__menu-list-link" href="catalog.html">Инструменты</a>
+                                <button class="js-arrow-down-collupse"><span class="icon-long-down-arrow"></span></button>
+                                <div class="catalog__menu-show submenu">
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item"><a href="goods.html" class="submenu__link">Лопаты</a></li>
+                                        <li class="submenu__item"><a href="goods.html" class="submenu__link">Грабли</a></li>
+                                        <li class="submenu__item"><a href="goods.html" class="submenu__link">Спец одежда</a></li>
+                                        <li class="submenu__item"><a href="goods.html" class="submenu__link">Перчатки</a></li>
+                                    </ul>
+                                </div>							
+                            </div>
+                            <div class="catalog-item js-menu-item">
+                                <a class="catalog__menu-list-link cataglog__menu-list-link--gray" href="#">Покупателям</a>
+                                <button class="js-arrow-down-collupse"><span class="icon-long-down-arrow"></span></button>
+                                <div class="catalog__menu-show submenu">
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item"><a href="make-order.html" class="submenu__link">Как сделать заказ</a></li>
+                                        <li class="submenu__item"><a href="payment.html" class="submenu__link">Способы оплаты</a></li>
+                                        <li class="submenu__item"><a href="questions.html" class="submenu__link">Вопросы и ответы</a></li>
+                                        <li class="submenu__item"><a href="delivery.html" class="submenu__link">Доставка</a></li>
+                                    </ul>
+                                </div>							
+                            </div>
+                             <div class="catalog-item js-menu-item">
+                                <a class="catalog__menu-list-link cataglog__menu-list-link--gray" href="about.html">О нас</a>
+                                <button class="js-arrow-down-collupse"><span class="icon-long-down-arrow"></span></button>
+                                <div class="catalog__menu-show submenu">
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item"><a href="company.html" class="submenu__link">Наши компания</a></li>
+                                        <li class="submenu__item"><a href="about.html" class="submenu__link">Работа с нами</a></li>
+                                        <li class="submenu__item"><a href="italy-agency.html" class="submenu__link">Торговые агенты в Италии</a></li>
+                                        <li class="submenu__item"><a href="foreign.html" class="submenu__link">Иностранные агенты</a></li>
+                                        <li class="submenu__item"><a href="contacts.html" class="submenu__link">Контакты</a></li>
+                                    </ul>
+                                    <div class="catalog__social">
+                                        <div class="social__row">
+                                            <div class="social__item"><a href="" class="social__item-link"><span class="icon-facebook"></span></a></div>
+                                            <div class="social__item"><a href="" class="social__item-link"><span class="icon-twitter"></span></a></div>
+                                            <div class="social__item"><a href="" class="social__item-link"><span class="icon-twitter"></span></a></div>
+                                            <div class="social__item"><a href="" class="social__item-link"><span class="icon-instagram"></span></a></div>
+                                            <div class="social__item"><a href="" class="social__item-link"><span class="icon-in"></span></a></div>
+                                        </div>
+                                    </div>
+                                </div>							
+                            </div> 
+                        </nav>
+                        <div class="mobile__acc-enter">
+                            <div class="shop__enter">
+                                <a href="cabinet.html" class="shop__enter-login">
+                                    <span>Аккаунт</span>
+                                    <div class="shop__enter-image"><img src="img/header/login.svg" alt=""></div>
+                                    <p>Войти</p>
+                                </a>
+                            </div>
+                        </div>
+                       <div class="catalog__language language">
+                            <button class="language__btn js-language-btn"><img src="img/header/header-language.png" alt=""><span>Русский</span></button>
+                            <div class="language__content">
+                                <a href="" class="language__content-link"><img src="img/language/language-state.png" alt=""><span>Английский</span></a>
+                                <a href="" class="language__content-link"><img src="img/language/language-italy.png" alt=""><span>Итальянский</span></a>
+                                <a href="" class="language__content-link"><img src="img/language/language-russia.png" alt=""><span>Итальянский</span></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            </div>	
+            <div class="header__info shop">
+                <div class="shop__row">
+                    <div class="shop__enter">
+                        <a href="enter-main.html" class="shop__enter-login">
+                            <div class="shop__enter-image"><img src="img/header/login.svg" alt=""></div>
+                            <p>Войти</p>
+                        </a>
+                    </div>
+                    <div class="shop__basket">
+                        <a href="cart.html" class="shop__basket-cart">
+                          <div class="shop__basket-image count">
+                              <img src="img/header/basket.svg" alt="">
+                              <div class="count__shop-basket">
+                                <span>0</span>
+                            </div>
+                          </div>
+                            <p>Корзина</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header> 
+
+ <div class="basket-overlay fix-block" id="cartIcon">
+    <div class="overlay-close"></div>
+    <div class="basket" id="basket">
+        <div class="basket-body">
+            <div class="basket-header">
+                <h3 class="basket-title">Ваша корзина <span>(0)</span></h3>
+                <button class="basket-close"></button>
+            </div>
+            <div class="basket-wrapper">
+                <div class="basket-wrapper-body">
+                    <div class="basket-content">
+                        <div class="basket-item__wrapper">
+                            <div class="basket-item">
+                                <div class="basket-item__left">
+                                    <div class="basket-item__image">
+                                        <img src="img/cart/cart-image.jpg" alt="">
+                                    </div>
+                                    <div class="basket-item__info">
+                                        <div class="basket-item__desc">
+                                            <h4 class="basket-item__title">Название дерево</h4>
+                                            <p><span>$</span>50,00</p>
+                                        </div>
+                                        <div class="basket-item__count basket-item__count--cart">
+                                            <div class="product-count">
+                                                <div class="product-count-row">
+                                                  <div class="product-count-button">
+                                                    <button class="minus">-</button>
+                                                    <input type="number" name="amount" value="1" class="count-value">
+                                                    <button class="plus"><span class="icon-pluse"></span></button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-item__right">
+                                    <p class="price">$100</p>
+                                    <button class="basket-item__remove">Удалить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <div class="basket-total">
+                        <p>Общая сумма: <span>$300</span></p>
+                    </div>
+                    <div class="basket-btn">
+                        <a class="btnForm" href="cart.html">перейти в козину</a>
+                    </div>
+                </div>
+            </div>
+            <div class="basket-noProduct" style="display: none;">Корзина пустая</div>
+        </div>
+    </div>
+</div>
+<!-- Попап для карточка товара Сервис и Эксклюзивное  -->
+<div class="popup popup__form fix-block">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content">
+                <button class="btn-close popup__btn-close"></button>
+                <form class="form-popup" action="#">
+                    <div class="form-popup__top">
+                        <h3 class="form-popup__title">Ваши данные</h3>
+                        <div class="form-main__row">
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="name">Ваши полное имя</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <input id="name" type="text">
+                                </div>
+                            </div>
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="country">Выберите свою страну</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <select name="" id="country">
+                                        <option value="">Италия</option>
+                                        <option value="">Америка</option>
+                                        <option value="">Россия</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="country-2">Ваш город</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <select name="" id="country-2">
+                                        <option value="">Город-1</option>
+                                        <option value="">Город-2</option>
+                                        <option value="">Город-3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="adres">Адрес</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <input id="adres" type="text">
+                                </div>
+                            </div>
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="email-index">Почтовый индекс</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <input id="email-index" type="text">
+                                </div>
+                            </div>
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="phone">Номер телефона</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <input id="phone" type="tel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-popup__bottom">
+                        <h3 class="form-popup__title">Cпособ оплаты</h3>
+                        <div class="form-main__row">
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="card-name">Названия карты</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <input id="card-name" type="text">
+                                </div>
+                            </div>
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="number-card">Номер карты</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <input id="number-card" type="text">
+                                </div>
+                            </div>
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="month-end">Месяц истечения срока</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <select name="" id="month-end">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="year-end">Год истечения</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <select name="" id="year-end">
+                                        <option value="">2021</option>
+                                        <option value="">2022</option>
+                                        <option value="">2023</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="cvv">CVV</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <input id="pass" type="password" class="password-enter">
+                                    <button type="button" class="see-password"></button>
+                                </div>
+                            </div>
+                            <div class="form-main__item">
+                                <div class="form-main__item-flex">
+                                    <label for="index-translation">Индекс банковского перевода</label>
+                                </div>
+                                <div class="form-main__group">
+                                    <input id="index-translation" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-popup__footer">
+                        <div class="form-main__check">
+                            <label for="checkbox">Нажимая на оплату, я понимаю и соглашаюсь с общими положениями и с Условиями оплаты и с Политикой конфиденциальности</label>
+                        </div>
+                        <button class="form-main__btn btnForm">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!-- Попап thanks  -->
+<div class="popup popup__main-thanks fix-block">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content popup__main-content popup__main-content--secondary">
+                <button class="btn-close popup__btn-close"></button>
+                <h3 class="popup__title">Спасибо!</h3>
+                <p>Ваш заказ успешно оформлен.Мы свяжемся с Вами в ближайшее время.</p>
+                <div class="popup__btn">
+                    <a href="index.html" class="mainBtnSecondary">Вернуться на главную страницу</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- Попап thanks second -->
+<div class="popup popup__main-thanks-second fix-block">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content popup__main-content">
+                <button class="btn-close popup__btn-close"></button>
+                <h3 class="popup__title">Спасибо!</h3>
+                <p>Ваш запрос или обращение отправлено, ближайшее время мы ответим на Ваш вопрос</p>
+                <div class="popup__btn">
+                    <button class="mainBtnSecondary">ОК</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!-- Попап на выход из аккаунта -->
+<div class="popup popup__exit fix-block">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content popup__exit">
+                <button class="btn-close popup__btn-close"></button>
+                <h3 class="popup__title">Выйти</h3>
+                <p>Вы уверены что хотите выйти из аккаунта</p>
+                <div class="popup__btn">
+                    <div class="popup__btn-row">
+                        <div class="popup__btn-item"><button class="mainBtnSecondary">Нет</button></div>
+                        <div class="popup__btn-item"><button class="btnForm">Да</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+  <!-- ?Основной контент -->
+  <main class="main">
+    
+    <section class="intro intro-top indentation-main bg-image" style="background-image: url(img/intro/intro-bg.jpg);">
+        <div class="intro__body container">
+          <div class="intro__wrapper">
+            <div class="intro__desc">
+              <h2 class="intro__title title">Все для сада</h2>
+              <p>Каталог для сада, тут вы можете найти все что Вы ищете для сада</p>
+            </div>
+            <div class="intro__btn">
+              <a href="catalog.html" class="mainBtnSecondary">Посмотреть каталог</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="about-catalog">
+        <div class="about-catalog__wrapper">
+          <div class="about-catalog__row">
+            <div class="about-catalog__item">
+              <div class="about-catalog__body">
+                <div class="about-catalog__desc">
+                  <h3 class="about-catalog__title">Клен Японский</h3>
+                  <p>Маленькие, средние, крупные, экземплярные, этого растение</p>
+                </div>
+                <div class="about-catalog__btn"><a class="mainBtn" href="goods.html">Посмотреть</a></div>
+                <div class="about-catalog__image">
+                  <img src="img/about-catalog/catalog-1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="about-catalog__item">
+              <div class="about-catalog__body">
+                <div class="about-catalog__desc">
+                  <h3 class="about-catalog__title">Удобрение</h3>
+                  <p>Все виды удобрение, начиная от домашних заканчивая до диких</p>
+                </div>
+                <div class="about-catalog__btn"><a class="mainBtn" href="goods.html">Посмотреть</a></div>
+                <div class="about-catalog__image">
+                  <img src="img/about-catalog/catalog-2.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="intro bg-image indentation" style="background-image: url(img/intro/intro-bg-2.jpg);">
+      <div class="intro__body container">
+        <div class="intro__wrapper">
+          <div class="intro__desc">
+            <h2 class="intro__title title">Эксклюзивное от Novello</h2>
+          </div>
+          <div class="intro__btn">
+            <a href="exclusive.html" class="mainBtnSecondary">Посмотреть каталог</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-catalog">
+      <div class="about-catalog__wrapper">
+        <div class="about-catalog__row">
+          <div class="about-catalog__item">
+            <div class="about-catalog__body">
+              <div class="about-catalog__desc about-catalog__desc--width">
+                <h3 class="about-catalog__title">Средние и многолетние деревья</h3>
+                <p>Разные деревье высота от среднего возраста до высокого возраста</p>
+              </div>
+              <div class="about-catalog__btn"><a class="mainBtn" href="goods.html">Посмотреть</a></div>
+              <div class="about-catalog__image">
+                <img src="img/about-catalog/catalog-3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="about-catalog__item">
+            <div class="about-catalog__body">
+              <div class="about-catalog__desc">
+                <h3 class="about-catalog__title">Кустарники и цветы</h3>
+                <p>Низкие, средние и высокие кустарники для сада, а также красивые цветы</p>
+              </div>
+              <div class="about-catalog__btn"><a class="mainBtn" href="goods.html">Посмотреть</a></div>
+              <div class="about-catalog__image">
+                <img src="img/about-catalog/catalog-4.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+
+    <section class="quipment bg-image indentation">
+      <div class="quipment_body">
+          <div class="quipment__desc">
+            <h2 class="quipment__title title">Оборудование</h2>
+            <p>Газонакасилки, бензапила, бочки для удобрения</p>
+          </div>
+          <div class="quipment__btn">
+            <a href="#" class="mainBtnSecondary">Посмотреть каталог</a>
+          </div>
+          <div class="quipment__image">
+            <img src="img/intro/intro-image.png" alt="">
+          </div>
+      </div>
+    </section>
+
+    <section class="various">
+        <div class="various__row">
+          <div class="various__item">
+            <a href="goods.html" class="various__body">
+              <div class="various__desc">
+                <h2 class="various__title">Лопаты</h2>
+                <p>Острые и не острые лопаты</p>
+              </div>
+              <div class="various__image">
+                <img src="img/about-catalog/catalog-6.png" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="various__item">
+            <a href="goods.html" class="various__body">
+              <div class="various__desc">
+                <h2 class="various__title">Грабли</h2>
+                <p>Чуткие грабли которые смягчат песок</p>
+              </div>
+              <div class="various__image">
+                <img src="img/about-catalog/catalog-5.png" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="various__item">
+            <a href="goods.html" class="various__body">
+              <div class="various__desc">
+                <h2 class="various__title">Перчатки</h2>
+                <p>Удобные перчатки для сада и огорода</p>
+              </div>
+              <div class="various__image">
+                <img src="img/about-catalog/catalog-8.png" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="various__item">
+            <a href="goods.html" class="various__body">
+                <div class="various__desc">
+                  <h2 class="various__title">Спец одежда</h2>
+                  <p>Юни формы для работы в огороде</p>
+                </div>
+              <div class="various__image">
+                <img src="img/about-catalog/catalog-7.png" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+    </section>
+
+   <section class="intro bg-image indentation" style="background-image: url(img/intro/intro-bg-3.jpg);">
+    <div class="intro__body container">
+      <div class="intro__wrapper">
+        <div class="intro__desc">
+          <h2 class="intro__title title">Сервис и обслуживание </h2>
+          <p>Проектирование сада, архитектура сада, умный сад, обслуживания, автополив</p>
+        </div>
+        <div class="intro__btn">
+          <a href="service.html" class="mainBtnSecondary">Посмотреть каталог</a>
+        </div>
+      </div>
+    </div>
+   </section>
+  </main>
+
+  <!-- ?Подключение Footer -->
+  <footer class="footer">
+    <div class="container">
+        
+        <div class="footer__top">
+            <div class="footer__top-row">
+                <div class="footer__item">
+                    <div class="footer__body">
+                        <div class="footer__navigation-body">
+                            <div class="footer__head">
+                                <a href="catalog.html" class="footer__title">Растение</a>
+                                <button colopen-parent=".footer__navigation-body" colopen-link=".collupse-content" class="footer__collupse-btn"><img src="img/aroow-footer-mobile.svg" alt=""></button>
+                            </div>
+                             <ul class="footer__list collupse-content">
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Экземплярные</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Крупномерные</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Средние деревья</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Кустарники и цветы</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Многолетники</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Вечнозеленые</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Луковицы</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Вьющие</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Высокие кусты</a></li>
+                            </ul>
+                        </div>
+                       <div class="footer__navigation-body">
+                           <div class="footer__head">
+                                <a href="catalog.html" class="footer__title">Удобрения</a>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__body">
+                        <div class="footer__navigation-body">
+                            <div class="footer__head">
+                                <a href="exclusive.html" class="footer__title">Эксклюзивное</a>
+                                <button colopen-parent=".footer__navigation-body" colopen-link=".collupse-content" class="footer__collupse-btn"><img src="img/aroow-footer-mobile.svg" alt=""></button>
+                            </div>
+                            <ul class="footer__list collupse-content">
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">RING</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Кулисы новелло</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Умный сад новелло</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Игры новелло</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Вертикальные стены</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Кензе</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Кидете</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Копо</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Кибатари</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__navigation-body">
+                            <div class="footer__head">
+                                <a class="footer__title" href="catalog.html">Оборудование</a>
+                                <button colopen-parent=".footer__navigation-body" colopen-link=".collupse-content" class="footer__collupse-btn"><img src="img/aroow-footer-mobile.svg" alt=""></button>
+                            </div>
+                            <ul class="footer__list collupse-content">
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Газонакасилки</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Бензопила</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Бочки для удобрения</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__body">
+                        <div class="footer__head">
+                            <a href="service.html" class="footer__title">Сервис</a>
+                            <button colopen-parent=".footer__navigation-body" colopen-link=".collupse-content" class="footer__collupse-btn"><img src="img/aroow-footer-mobile.svg" alt=""></button>
+                        </div>
+                        <div class="footer__navigation-body">
+                            <ul class="footer__list collupse-content">
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Проектирование сада</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Архитектура сада</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Обслуживания</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="card-product-service.html">Умный сад</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__navigation-body">
+                            <div class="footer__head">
+                                <a class="footer__title" href="catalog.html">Инструменты</a>
+                                <button colopen-parent=".footer__navigation-body" colopen-link=".collupse-content" class="footer__collupse-btn"><img src="img/aroow-footer-mobile.svg" alt=""></button>
+                            </div>
+                            <ul class="footer__list collupse-content">
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Лопаты</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Грабли</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Перчатки</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="goods.html">Спец одежда</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__body">
+                        <div class="footer__navigation-body">
+                            <div class="footer__head">
+                                <a class="footer__title" href="#">Покупателяем</a>
+                                <button colopen-parent=".footer__navigation-body" colopen-link=".collupse-content" class="footer__collupse-btn"><img src="img/aroow-footer-mobile.svg" alt=""></button>
+                            </div>
+                            <ul class="footer__list collupse-content">
+                                <li class="footer__list-item"><a class="footer__list-link" href="make-order.html">Как сделать заказ</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="payment.html">Способы оплаты</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="questions.html">Вопросы и ответы</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="delivery.html">Доставка</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__navigation-body">
+                            <div class="footer__head">
+                                <a class="footer__title" href="about.html">О нас</a>
+                                <button colopen-parent=".footer__navigation-body" colopen-link=".collupse-content" class="footer__collupse-btn"><img src="img/aroow-footer-mobile.svg" alt=""></button>
+                            </div>
+                            <ul class="footer__list collupse-content">
+                                <li class="footer__list-item"><a class="footer__list-link" href="company.html">Наша компания</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="about.html">Работа с нами</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="italy-agency.html">Торговые агенты в Италии</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="foreign.html">Иностранные агенты</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="company.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__center">
+            <div class="footer__center-row">
+                <div class="footer__logo logo">
+                    <a href="index.html">Novello</a>
+                </div>
+                <div class="footer__social social">
+                    <div class="social__wrapper">
+                        <p>Мы в соц-сетях:</p>
+                        <div class="social__row">
+                            <div class="social__item"><a href="" class="social__item-link"><span class="icon-facebook"></span></a></div>
+                            <div class="social__item"><a href="" class="social__item-link"><span class="icon-twitter"></span></a></div>
+                            <div class="social__item"><a href="" class="social__item-link"><span class="icon-twitter"></span></a></div>
+                            <div class="social__item"><a href="" class="social__item-link"><span class="icon-instagram"></span></a></div>
+                            <div class="social__item"><a href="" class="social__item-link"><span class="icon-in"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__bottom-row">
+                <div class="copy">© 2021 Novello — интернет-магазин ландшафтного дизайна, все для сада. Все права защищены</div>
+               <div class="footer__language language">
+                  <button class="language__btn js-language-btn"><img src="img/language/language-main.png" alt=""><span>Русский</span></button>
+                  <div class="language__content">
+                      <a href="#" class="language__content-link"><img src="img/language/language-state.png" alt=""><span>Английский</span></a>
+                      <a href="#" class="language__content-link"><img src="img/language/language-italy.png" alt=""><span>Итальянский</span></a>
+                      <a href="#" class="language__content-link"><img src="img/language/language-russia.png" alt=""><span>Итальянский</span></a>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+  </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="libs/jquery.fancybox.min.js"></script>
+<script src="libs/ResizeSensor.min.js"></script>
+<script src="libs/theia-sticky-sidebar.min.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
